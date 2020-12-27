@@ -40,11 +40,11 @@ def print_report(reportdata):
     for row in reportdata:
         print('%10s %10d %10.2f %10.2f' % row)
 
-def portfolio_report(portfoliofile, pricefile):        
+def portfolio_report(portfoliofile, pricefile):
     '''
     Make a stock report given portfolio and price data files.
     '''
-    # Read data files 
+    # Read data files
     portfolio = read_portfolio(portfoliofile)
     prices = read_prices(pricefile)
 
